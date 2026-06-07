@@ -2,30 +2,45 @@
     font-family: "Montserrat", sans-serif;
     display: flex;
     flex-direction: column;
-    gap:  5px;
-    /*border: 3px solid cornflowerblue;*/
+    margin: 6px 0;
+
 }
 
 .friendImageAndText {
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
+    gap: 10px;
+    align-items: center;
 }
 
 .friendImageAndText img {
-/*border: 1px solid red;*/
+    max-width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .friendText {
-    /*border: 1px solid red;*/
     display: flex;
     flex-direction: column;
     gap: 4px;
+    background: #f5f7fb;
+    border-radius: 15px 15px 15px 0;
+    padding: 10px 15px;
+    position: relative;
+    min-width: 300px;
 
 }
 
 .friendText:after {
-
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    width: 10px;
+    height: 10px;
+    background: inherit;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
 
 .friendName {
@@ -38,7 +53,6 @@
     font-weight: 400;
     font-size: 16px;
     color: #000;
-    /*border: 1px solid red;*/
 }
 
 .friendTime {

@@ -10,7 +10,6 @@
     margin: 27px 0 35px;
 
 
-
 }
 
 .textarea {
@@ -28,7 +27,7 @@
 
 .button {
     border-radius: 20px;
-    max-width: 120px;
+    width: 120px;
     height: 40px;
     background: #06c;
     font-family: "Montserrat", sans-serif;
