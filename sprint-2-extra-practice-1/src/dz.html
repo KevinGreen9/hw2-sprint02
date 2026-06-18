@@ -1,0 +1,69 @@
+<script>
+    //01
+    let numbers = [1, 2, 3, 4, 5];
+
+    let copyNumbers = [...numbers, 7]
+
+    //02
+    let man1 = {
+        name: 'A',
+        age: 5,
+        town: {
+            name: 'ffffff',
+            family: 'df',
+        }
+    };
+    let man2 = {...man1, town: {...man1.town}}
+
+    //03
+    let test = {
+        name: 'B',
+        age: 5,
+        friends: ['kolia', 'vasia', 'misha']
+    }
+
+    let testCopy = {...test, friends: [...test.friends]}
+
+    //04
+    let people = [
+        {name: 'peter', age: 23},
+        {name: 'ivan', age: 63},
+        {name: 'kolia', age: 35}
+    ]
+
+    let peopleCopy = people.map(obj => ({...obj}))
+
+    //05
+    let hw = {
+        name: 'A',
+        age: 5,
+        friends: [
+            {name: 'peter', age: 23},
+            {name: 'ivan', age: 63},
+            {name: 'kolia', age: 35}
+        ]
+    };
+    let hwCopy = {...hw, friends: [...hw.friends.map(obj => ({...obj}))]};
+
+    //06
+    let dz = {
+        name: 'A',
+        age: 5,
+        friends: {
+            name: 'a',
+            age: 23,
+            work: {
+                first: 'doctor',
+                last: 'driver'
+            },
+        },
+        avto: [
+            {name: 'reno', age: 1999},
+            {name: 'tesla', age: 2023},
+        ]
+    }
+    let dzCopy =
+
+</script>
+
+
