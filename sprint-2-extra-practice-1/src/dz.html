@@ -62,7 +62,63 @@
             {name: 'tesla', age: 2023},
         ]
     }
-    let dzCopy =
+    let dzCopy = {...dz, friends: {...dz.friends, work: {...dz.friends.work}}, avto: [...dz.avto.map(ob => ({...ob}))]};
+
+    //07
+    let hard = {
+        name: 'Alex',
+        age: 5,
+        wife: {
+            name: 'Sveta',
+            age: 5,
+            work: {
+                position: 'boss',
+                experience: 15
+            },
+
+            avto: [
+                {
+                    name: 'opel',
+                    age: 1999,
+                    defect: {
+                        title: 'dw',
+                        details: [
+                            {title: 'grm', price: 270},
+                            {title: 'val', price: 320},
+                            {title: 'oil', price: 50}
+                        ]
+                    }
+
+                },
+                {name: "Alena", address: 'London'}
+            ]
+        }
+    };
+
+
+    let hardCopy = {
+        ...hard,
+        wife: {
+            ...hard.wife,
+            work: {...hard.wife.work},
+            avto: [...hard.avto.map((ob, index) => {
+                if (index === 0) {
+                    return {
+                        ...ob,
+                        defect: {
+                            ...hard.wife.avto[index].defect,
+details: [...hard.wife.avto[index].defect.details.map(ob => ({...ob}))]
+                        }
+
+
+                    };
+                } else {
+                    return {...ob}
+                }
+            })
+            ]
+        }
+    }
 
 </script>
 
