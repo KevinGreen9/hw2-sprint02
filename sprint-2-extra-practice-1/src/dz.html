@@ -101,7 +101,7 @@
         wife: {
             ...hard.wife,
             work: {...hard.wife.work},
-            avto: [...hard.avto.map((ob, index) => {
+            avto: [...hard.wife.avto.map((ob, index) => {
                 if (index === 0) {
                     return {
                         ...ob,
