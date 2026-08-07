@@ -1,25 +1,65 @@
 .sidebar {
+    position: fixed;          /* ← фиксируем, чтобы не сдвигал страницу */
+    top: 0;
+    left: -317px;             /* ← скрыт за левым краем */
+    width: 317px;
+    height: 100vh;            /* ← вся высота экрана */
+    background: #ffffff;
+    box-shadow: 0 1px 2px 0 rgba(29, 33, 38, 0.1), 0 10px 40px 0 rgba(29, 33, 38, 0.13);
+    transition: left 0.3s ease; /* ← плавный выезд */
+    z-index: 1000;
+    padding-left: 70px;
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
 .sidebar.open {
+    max-width: 317px;
+    min-height: 720px;
+    display: flex;
+    left: 0;
+    flex-direction: column;
 }
 
 .background {
+    box-shadow: 0 1px 2px 0 rgba(29, 33, 38, 0.1), 0 10px 40px 0 rgba(29, 33, 38, 0.13);
+    background: #fff;
 }
 
 .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    margin-top: 63px;
 }
 
 .nav a {
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
 }
 
 .nav a:hover {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #58acff;
 }
 
 .nav a.active {
+    color: #3d6b99;
 }
 .close {
+    position: absolute;       /* ← позиционируем внутри сайдбара */
+    top: 16px;
+    right: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
 }
 
 .close img {
+    width: 24px;
+    height: 24px;
+    display: block;
 }
