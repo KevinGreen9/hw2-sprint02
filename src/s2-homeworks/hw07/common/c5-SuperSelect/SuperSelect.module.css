@@ -1,0 +1,19 @@
+.select {
+    border: 1px solid #c2c2c2;
+    border-radius: 2px;
+    width: 165px;
+    height: 24px;
+    background: #fff;
+}
+
+.select:focus {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.option:hover {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
