@@ -1,19 +1,27 @@
+
 .select {
     border: 1px solid #c2c2c2;
     border-radius: 2px;
     width: 165px;
     height: 24px;
-    background: #fff;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('./chevron-down.svg') ;   /* стрелка уже смотрит вверх */
+    background-repeat: no-repeat;
+    background-position: right ;
+    background-size: 24px;
+    padding: 2px 0 6px 5px;
 }
 
 .select:focus {
-    font-weight: 400;
-    font-size: 14px;
-}
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('./chevron-up-outline.svg') ;   /* стрелка уже смотрит вверх */
+    background-repeat: no-repeat;
+    background-position: right ;
+    background-size: 24px;
 
-
-.option:hover {
-    font-weight: 400;
-    font-size: 14px;
-    color: #000;
 }
