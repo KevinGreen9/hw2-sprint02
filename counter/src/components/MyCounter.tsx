@@ -13,6 +13,9 @@
         let [maxValue, setMaxValue] = useState<number >(0);
         let[startValue, setStartValue] = useState<number>(0);
 
+
+
+
         useEffect(() => {
             const getMaxValue = localStorage.getItem('maxValueKey')
             if (getMaxValue !== null) {
