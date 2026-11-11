@@ -1,14 +1,51 @@
 .buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #fff;
 }
 
 .clock {
+    max-width: 1280px;
+    height: 372px;
 }
 
 .watch {
+    padding-top: 26px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+
 }
 
 .watch strong {
+    font-weight: 600;
 }
 
 .more {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 8px 0 27px;
+}
+.hw9-button-start{
+    border-radius: 3px;
+    padding-block: 5px;
+    padding-inline: 24px;
+    width: 83px;
+    height: 30px;
+    background: #06c;
+}
+
+.hw9-button-stop{
+    border-radius: 3px;
+    padding-block: 5px;
+    padding-inline: 24px;
+    width: 82px;
+    height: 30px;
+    background: #06c;
+    opacity: 0.4;
 }
